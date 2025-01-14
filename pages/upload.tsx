@@ -32,7 +32,7 @@ const Upload: React.FC = () => {
 
       setMessage(`Video uploaded successfully: ${res.data.videoUrl}`);
     } catch (error) {
-      setMessage('Error uploading video.');
+      setMessage(`Error uploading video. ${error}`);
     } finally {
       setLoading(false);
     }
